@@ -28,7 +28,7 @@ describe("Example Test 2", () => {
     dateRouteHandler(mockRequest, mockResponse);
     const actualResponseBody = mockResponse._getData();
     var d = Math.floor(+new Date() / 1000);
-    const expectedResponseBody = "Unix UUTS: "+d;
+    const expectedResponseBody = "Unix TS: "+d;
     assert.strictEqual(actualResponseBody, expectedResponseBody);
   });
 });
