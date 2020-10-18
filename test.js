@@ -29,6 +29,6 @@ describe("Example Test 2", () => {
     const actualResponseBody = mockResponse._getData();
     var d = Math.floor(+new Date() / 1000);
     const expectedResponseBody = "Unix UUTS: "+d;
-    assert(actualResponseBody, expectedResponseBody);
+    assert.strictEqual(actualResponseBody, expectedResponseBody);
   });
 });
