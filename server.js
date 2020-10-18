@@ -1,8 +1,11 @@
 var express = require('express');
 var exampleRouter = require("./example-router");
+var dateRouter = require("./date-router");
 var app = express();
 
 app.use("/example", exampleRouter);
+
+app.use("/date", dateRouter);
 
 app.get('/', function (req, res) {
     res.send('Hello Worlds!');
